@@ -104,7 +104,7 @@ func DeleteGeojson(mconn *mongo.Database, collname string, userdata User) interf
 	return DeleteOneDoc(mconn, collname, filter)
 }
 
-func GeoIntersects(mconn *mongo.Database, collname string, coordinate Point, geospatial models.Geospatial) ([]FullGeoJson, error) {
+func GeoIntersects(mconn *mongo.Database, collname string, geospatial models.Geospatial) ([]FullGeoJson, error) {
 	return helpers.GetGeoIntersectsDoc[FullGeoJson](mconn, collname, "geometry", geospatial)
 }
 
