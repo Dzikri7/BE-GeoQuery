@@ -1,3 +1,7 @@
+# Dzikri
+
+
+```sh
 go get -u all
 go mod tidy
 git tag                                 #check current version
