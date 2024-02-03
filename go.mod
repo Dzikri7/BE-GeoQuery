@@ -1,6 +1,8 @@
 module github.com/Dzikri7/BE-GeoQuery
 
-go 1.18
+go 1.21.3
+
+toolchain go1.21.6
 
 require (
 	aidanwoods.dev/go-paseto v1.5.1
