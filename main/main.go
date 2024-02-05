@@ -18,7 +18,7 @@ func HelloHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Header().Set("Access-Control-Allow-Origin", "*")
-	fmt.Fprintf(w, dz.PostGeoIntersects("MONGOSTRING", "gisdz", "gisdz", r))
+	fmt.Fprintf(w, dz.PostCenter("MONGOSTRING", "gisdz", "gisdz", r))
 }
 
 func handlerRequests() {
